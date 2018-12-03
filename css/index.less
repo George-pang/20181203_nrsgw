@@ -1,0 +1,409 @@
+/*首页 样式*/
+
+.index_main {
+    .column_wrapper {
+        .column {
+            padding: 100px 0 100px;
+            .column_title {
+                font-family: PingFang-SC-Medium;
+                font-size: 36px;
+                line-height: 1em;
+                font-weight: normal;
+                letter-spacing: 0px;
+                color: #333333;
+                text-align: center;
+            }
+            .column_subtitle {
+                margin-top: 20px;
+                font-size: 24px;
+                line-height: 1em;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #999999;
+                text-align: center;
+            }
+        }
+        .column_service {
+            .service_swiper {
+                margin-top: 40px;
+                padding: 40px 0;
+                .swiper-slide {
+                    .left-pic {
+                        float: left;
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        transform: translateY(-50%);
+                    }
+                    .right-desc {
+                        float: right;
+                        width: 600px;
+                        .service-name {
+                            font-size: 28px;
+                            font-weight: normal;
+                            line-height: 30px;
+                            letter-spacing: 3px;
+                            color: #333333;
+                        }
+                        .service-desc {
+                            margin-top: 30px;
+                            font-size: 18px;
+                            height: 90px;
+                            line-height: 30px;
+                            letter-spacing: 2px;
+                            color: #999999;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 3;
+                            -webkit-box-orient: vertical;
+                        }
+                        .more-btn {
+                            margin-top: 40px;
+                            width: 120px;
+                            height: 30px;
+                            line-height: 30px;
+                            color: #fff;
+                            text-align: center;
+                            background-color: #0294FD;
+                            border-radius: 15px;
+                            span {
+                                margin-right: 5px;
+                                vertical-align: middle;
+                            }
+                            img {
+                                vertical-align: middle;
+                            }
+                        }
+                    }
+                }
+                .service_swiper_pagination {
+                    position: absolute;
+                    top: 40px;
+                    left: auto;
+                    right: 0;
+                    width: 80px;
+                    .swiper-pagination-bullet {
+                        background-color: #333;
+                    }
+                    .swiper-pagination-bullet-active {
+                        background-color: #fff;
+                        border: solid 1px #0ddc7c;
+                    }
+                }
+                .swiper-button-next,
+                .swiper-button-prev {
+                    display: none;
+                }
+            }
+        }
+        .column_platform {
+            .platform-list {
+                margin-top: 80px;
+                .platform {
+                    float: left;
+                    margin-right: 49px;
+                    width: 364px;
+                    text-align: center;
+                    .platform-icon {
+                        text-align: center;
+                        opacity: .6;
+                        transition: all .6s;
+                        &:hover {
+                            opacity: 1;
+                        }
+                    }
+                    .platform-name {
+                        margin-top: 20px;
+                        font-size: 28px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        line-height: 30px;
+                        letter-spacing: 3px;
+                        color: #333333;
+                    }
+                    .platform-intro {
+                        margin-top: 20px;
+                        font-size: 18px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        line-height: 30px;
+                        letter-spacing: 2px;
+                        color: #999999;
+                        text-align: center;
+                    }
+                    &:nth-child(3) {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+        .column_advantage {
+            .advantage-list {
+                margin-top: 60px;
+                padding: 0 35px;
+                .advantage {
+                    position: relative;
+                    float: left;
+                    width: 320px;
+                    height: 250px;
+                    text-align: center;
+                    border-radius: 5px;
+                    border: solid 1px #0fec85;
+                    // border: 1px solid #0294FD;
+                    overflow: hidden;
+                    &:hover {
+                        .advantage-details {
+                            height: 100%;
+                        }
+                    }
+                    .advantage-desc {
+                        position: absolute;
+                        top: 50%;
+                        left: 0;
+                        width: 100%;
+                        transform: translateY(-50%);
+                        text-align: center;
+                        .advantage-name {
+                            margin-top: 20px;
+                            font-family: PingFang-SC-Medium;
+                            font-size: 24px;
+                            font-weight: normal;
+                            letter-spacing: 0px;
+                            color: #333333;
+                        }
+                    }
+                    .advantage-details {
+                        // display: none;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 0;
+                        color: #fff;
+                        text-align: center;
+                        // background-color: #0fec85;
+                        background-color: #0294FD;
+                        transition: all .3s;
+                        .details-txt {
+                            position: absolute;
+                            top: 50%;
+                            left: 0;
+                            width: 100%;
+                            padding: 0 40px;
+                            transform: translateY(-50%);
+                            font-family: PingFang-SC-Medium;
+                            font-size: 18px;
+                            font-weight: normal;
+                            line-height: 30px;
+                            letter-spacing: 0px;
+                            color: #ffffff;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 4;
+                            -webkit-box-orient: vertical;
+                        }
+                    }
+                }
+                .m_r {
+                    margin-right: 80px;
+                }
+                .m_t {
+                    margin-top: 30px;
+                }
+            }
+        }
+        .column_case {
+            .case-list {
+                margin-top: 70px;
+                .case {
+                    position: relative;
+                    float: left;
+                    width: 392px;
+                    height: 270px;
+                    overflow: hidden;
+                    background-color: #4f4f4f;
+                    // transition: all .6s;
+                    &:hover {
+                        img {
+                            opacity: .4;
+                        }
+                        .case-name {
+                            // display: block;
+                            opacity: 1;
+                        }
+                    }
+                    >img {
+                        width: 100%;
+                        height: auto;
+                        opacity: .8;
+                        transition: all .6s;
+                    }
+                    .case-name {
+                        // display: none;
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%); // backface-visibility: hidden;
+                        width: 100%;
+                        opacity: 0;
+                        transition: all .6s;
+                        .name {
+                            padding: 0 16px;
+                            font-size: 36px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            letter-spacing: 0px;
+                            color: #ffffff;
+                            text-align: center;
+                            // overflow: hidden;
+                            // text-overflow: ellipsis;
+                            // white-space: nowrap;
+                        }
+                        .subtitle{
+                            margin-top: 10px;
+                            font-size: 18px;
+                            line-height: 1em;
+                            text-align: center;
+                            color: #fff;
+                        }
+                        .more-btn {
+                            width: 100px;
+                            margin: 20px auto 0;
+                            padding: 0 10px;
+                            height: 30px;
+                            line-height: 30px;
+                            color: #fff;
+                            background-color: #0ddc7c;
+                            border-radius: 15px;
+                            text-align: right;
+                            cursor: pointer;
+                            img {
+                                // vertical-align: baseline;
+                            }
+                        }
+                    }
+                }
+                .m_r {
+                    margin-right: 7px;
+                }
+                .m_t {
+                    margin-top: 7px;
+                }
+            }
+        }
+    }
+    .shallow-bg {
+        background-color: #f9f9f9;
+    }
+    .banner_2 {
+        position: relative;
+        height: 220px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        .banner_2_txt {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            li {
+                float: left;
+                margin-right: 120px;
+                font-family: PingFang-SC-Medium;
+                font-size: 28px;
+                font-weight: normal;
+                letter-spacing: 0px;
+                color: #ffffff;
+                text-align: center;
+                .count {
+                    font-size: 36px;
+                    font-weight: normal;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+    .company {
+        position: relative;
+        height: 660px; // 这里用背景图缩放时文字和背景图的位置就发生了偏差
+        // background: url("../img/bg1.jpg")no-repeat;  
+        // background-size: cover;
+        text-align: center;
+        .company-intro {
+            position: absolute;
+            top: 102px;
+            left: 50%;
+            transform: translateX(-50%); // width: 50%;
+            width: 1000px;
+            padding: 40px 0;
+            .company-name {
+                position: relative;
+                font-family: PingFang-SC-Bold;
+                font-size: 28px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #ffffff;
+                text-align: center;
+                &::after {
+                    position: absolute;
+                    content: "";
+                    bottom: -10px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 40px;
+                    height: 4px;
+                    background-color: #ffffff;
+                }
+            }
+            .company-details {
+                margin-top: 40px;
+                height: 120px;
+                padding: 0 70px;
+                font-family: PingFang-SC-Bold;
+                font-size: 18px;
+                font-weight: normal;
+                font-stretch: normal;
+                line-height: 30px;
+                letter-spacing: 0px;
+                color: #ffffff;
+                text-align: center;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+            }
+            .more-btn {
+                width: 100px;
+                margin: 30px auto 0;
+                padding: 0 10px;
+                height: 30px;
+                line-height: 30px;
+                background-color: #ffffff;
+                border-radius: 15px;
+                text-align: right;
+                img {
+                    // vertical-align: baseline;
+                }
+            }
+        }
+        .anli-list {
+            position: absolute;
+            bottom: 100px;
+            left: 50%;
+            transform: translateX(-50%);
+            .anli {
+                float: left;
+                width: 170px;
+                margin-right: 85px;
+                &:nth-child(5) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

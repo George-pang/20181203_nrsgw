@@ -1,0 +1,136 @@
+/*关于我们页样式*/
+.about_banner {
+  text-align: center;
+}
+.about-main {
+  margin: 120px auto 200px;
+  width: 1200px;
+  background-color: #f9f9f9;
+}
+.about-main .about-us-swiper {
+  float: left;
+  width: 440px;
+  height: 800px;
+  background-color: #0fec85;
+}
+.about-main .about-us-swiper .swiper-wrapper .swiper-slide {
+  padding: 10px;
+  text-align: center;
+}
+.about-main .about-us-swiper .swiper-pagination-bullets {
+  bottom: 30px;
+}
+.about-main .about-us-swiper .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  vertical-align: middle;
+}
+.about-main .about-us-swiper .swiper-pagination-bullet-active {
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  border: solid 2px #ffffff;
+}
+.about-main .about-us-swiper .swiper-button-next,
+.about-main .about-us-swiper .swiper-button-prev {
+  display: none;
+}
+.about-main .about_us {
+  position: relative;
+  float: left;
+  width: 760px;
+  padding: 80px 40px 0;
+}
+.about-main .about_us .tab-hd {
+  position: absolute;
+  top: 90px;
+  right: 50px;
+  z-index: 10;
+}
+.about-main .about_us .tab-hd .tab-prev,
+.about-main .about_us .tab-hd .tab-next {
+  float: left;
+  width: 50px;
+  height: 30px;
+  line-height: 30px;
+  background-color: #cbcbcb;
+  text-align: center;
+  cursor: pointer;
+}
+.about-main .about_us .tab-hd .tab-prev {
+  border-radius: 15px 0px 0px 15px;
+}
+.about-main .about_us .tab-hd .tab-prev img {
+  transform: rotateY(180deg);
+}
+.about-main .about_us .tab-hd .tab-next {
+  border-radius: 0px 15px 15px 0px;
+}
+.about-main .about_us .tab-hd .tab-current {
+  background-color: #0ddc7c;
+}
+.about-main .about_us .title-row .title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1em;
+  letter-spacing: 0px;
+  color: #333333;
+}
+.about-main .about_us .title-row .subtitle {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1em;
+  letter-spacing: 0px;
+  color: #999999;
+}
+.about-main .about_us .content {
+  margin-top: 60px;
+}
+.about-main .about_us .contact-us {
+  display: none;
+}
+.about-main .about_us .contact-us .content .contact-info {
+  font-family: PingFang-SC-Medium;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 36px;
+  letter-spacing: 0px;
+  color: #666666;
+}
+.about-main .about_us .contact-us .content .map {
+  margin-top: 40px;
+  width: 670px;
+  height: 280px;
+}
+.about-main .about_us .contact-us .content .map #container {
+  width: 100%;
+  height: 100%;
+}
+.about-main .about_us .company-profile .content .subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  line-height: 1.5em;
+  letter-spacing: 0px;
+  color: #333333;
+}
+.about-main .about_us .company-profile .content p {
+  margin-top: 10px;
+  font-family: PingFang-SC-Medium;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  line-height: 1.5em;
+  letter-spacing: 0px;
+  color: #666;
+}
+.about-main .about_us .company-profile .content p:nth-child(1) {
+  margin-top: 0;
+}
+.about-main .about_us .company-profile .content .m_t30 {
+  margin-top: 30px;
+}

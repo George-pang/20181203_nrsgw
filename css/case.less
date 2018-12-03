@@ -1,0 +1,119 @@
+/*案例页样式*/
+.case_banner{
+    text-align: center;
+}
+.case-main{
+    padding: 120px 0 140px;
+    .title{
+        font-family: 'Raleway', sans-serif;
+        font-size: 36px;
+        font-weight: normal;
+        font-stretch: normal;
+        letter-spacing: 0px;
+        color: #333;
+        text-align: center;
+    }
+    .tab-hd{
+        margin: 60px auto 0;
+        width: 610px;
+        .tab{
+            float: left;
+            width: 150px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            font-family: PingFang-SC-Medium;
+            font-size: 24px;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0px;
+            color: #333;
+            margin-right: 80px;
+            cursor: pointer;
+            &:nth-child(3){
+                margin-right: 0;
+            }
+        }
+        .tab-cur{
+            color: #fffefe;
+            background-color: #0ddc7c;
+            border-radius: 20px;
+        }
+    }
+    .tab-bd{
+        margin-top: 40px;
+        .case-list{
+            display: none;
+            .case{
+                float: left;
+                width: 392px;
+                border-radius: 5px 5px 0px 0px;
+                box-shadow: 0 0 2px 1px
+                rgba(0, 0, 0, .1);
+                >img{
+                    width: 100%;
+                    // height: auto;
+                    height: 280px;
+                }
+                &:hover{
+                    box-shadow: 0px 0px 10px 1px 
+                    rgba(0, 0, 0, 0.2);
+                    .go-look{
+                        display: block!important;
+                    }
+                }
+                .desc{
+                    padding: 0 20px;
+                    height: 80px;
+                    line-height: 80px;
+                    .case-name{
+                        float: left;
+                        width: 200px;
+                        font-family: PingFang-SC-Medium;
+                        font-size: 28px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        letter-spacing: 0px;
+                        color: #333;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        white-space: nowrap;
+                    }
+                    .go-look{
+                        float: right;
+                        display: none;
+                        margin-top: 20px;
+                        width: 120px;
+                        height: 40px;
+                        line-height: 40px;
+                        background-color: #0ddc7c;
+                        border-radius: 20px;
+                        text-align: center;
+                        cursor: pointer;
+                        .txt{
+                            margin-right: 5px;
+                            font-size: 18px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            letter-spacing: 0px;
+                            color: #fffefe;
+                        }
+                        img{
+                            vertical-align: baseline;
+                        }
+
+                    }
+                }
+            }
+            .m-r{
+                margin-right: 7px;
+            }
+            .m-t{
+                margin-top: 10px;
+            }
+        }
+        .case-list-cur{
+            display: block;
+        }
+    }
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>诺瑞斯信息科技--关于我们</title>
+    <link rel="icon" href="images/logo.png" type="image/png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/about_us.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/about_us.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=IRtuipZwpSnKGqnEYqXRLdlo247Vuzzr"></script>
+</head>
+
+<body>
+    <div class="top-nav">
+        <div class="w nav-bar">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+                <span class="logo_name">诺瑞斯信息科技</span>
+            </div>
+            <div class="r-nav">
+                <ul class="web-nav clearfix">
+                    <li class="nav-item">
+                        <a href="index.html" class="item_link">首页</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a href="about_us.html" class="item_link">关于我们</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="case.html" class="item_link">成功案例</a>
+                    </li>
+                    <li class="nav-item nav-item-fw">
+                        <a href="products.html" class="item_link">产品体系</a>
+                        <!-- <div class="fw_menu">
+                            <ul>
+                                <li class="fw_item fw_item_cur"><a class="fw_item_link" href="fw_trainingInstitution.html">APP开发</a></li>
+                                <li class="fw_item"><a class="fw_item_link" href="fw_smartCampus.html">网站开发</a></li>
+                                <li class="fw_item"><a class="fw_item_link" href="fw_enterpriseTraining.html">微信定制</a></li>
+                            </ul>
+                        </div> -->
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact_us.html" class="item_link">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="banner" style="background-image: url(img/about_banner.jpg)">
+        <!-- <img src="img/about_banner.jpg" alt=""> -->
+    </div>
+    <div class="about-main clearfix">
+        <div class="swiper-container about-us-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/about_img1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/about_img1.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/about_img1.jpg" alt="">
+                </div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination about-swiper-pagination"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div class="about_us">
+            <div class="tab-hd">
+                <div class="tab tab-prev">
+                    <img src="img/home_icon2.png" alt="">
+                </div>
+                <div class="tab tab-next tab-current">
+                    <img src="img/home_icon2.png" alt="">
+                </div>
+            </div>
+            <div class="tab-bd">
+                <div class="company-profile tab-item">
+                    <div class="title-row">
+                        <h4 class="title">公司简介</h4>
+                        <p class="subtitle">ABOUT US</p>
+                    </div>
+                    <div class="content">
+                        <h4 class="subtitle">
+                            我们是谁
+                        </h4>
+                        <p>
+                            安徽诺瑞斯信息科技有限公司成立于2017年，总部位于合肥。专注于移动互联网领域，提供APP、PC端多平台及微信公众号小程序开发及解决方案。
+                        </p>
+                        <h4 class="subtitle m_t30">
+                            我们的理念
+                        </h4>
+                        <p>
+                            诺瑞斯始终本着一切以用户价值为核心，以 专业、诚信、务实、创新、服务为经营理念，
+                            以客户的最大满意为工作准则，不断的锤炼技术技能和沉淀服务水准。
+                        </p>
+                    </div>
+                </div>
+                <div class="contact-us tab-item">
+                    <div class="title-row">
+                        <h4 class="title">联系我们</h4>
+                        <p class="subtitle">CONTACT US</p>
+                    </div>
+                    <div class="content">
+                        <div class="contact-info">
+                            <p>服务邮箱：guohusong@126.com</p>
+                            <p>联系电话：18655158236</p>
+                            <p>公司地址：合肥市高新区天湖路17号开尔厂房（南）三层</p>
+                        </div>
+                        <div class="map">
+                            <div id="container"></div>
+                            <!--创建地图容器-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <ul class="w content clearfix">
+            <li class="footer_item footer_logo">
+                <img src="images/logo.png" alt="">
+                <h4 class="name">诺瑞斯信息科技</h4>
+            </li>
+            <li class="footer_item footer_nav">
+                <h3 class="title">网站导航</h3>
+                <ul>
+                    <li class="footer_nav_item"><a href="index.html">官网首页</a></li>
+                    <li class="footer_nav_item"><a href="javascript:;">关于我们</a></li>
+                    <li class="footer_nav_item"><a href="javascript:;">案例一览</a></li>
+                    <li class="footer_nav_item"><a href="javascript:;">产品体系</a></li>
+                    <li class="footer_nav_item"><a href="javascript:;">联系我们</a></li>
+                </ul>
+            </li>
+            <li class="footer_item contact_us">
+                <h3 class="title">联系我们</h3>
+                <ul>
+                    <li>公司地址：合肥市高新区天湖路17号开尔厂房（南）三层</li>
+                    <li>联系电话：18655158236</li>
+                    <li>联系邮箱：guohusong@126.com</li>
+                </ul>
+            </li>
+            <li class="footer_item fllow_us">
+                <h3 class="title">关注我们</h3>
+                <div class="qrCode">
+                    <img src="img/home_img10.png" alt="">
+                </div>
+            </li>
+        </ul>
+        <div class="w copyright">
+            ©nuris.com.cn 2018 <a href="javascript:;">皖ICP备17021807号-2</a> 安徽诺瑞斯信息科技有限公司版权所有
+        </div>
+
+    </div>
+
+</body>
+
+</html>
