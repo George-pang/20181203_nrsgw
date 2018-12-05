@@ -23,12 +23,14 @@
             line-height: 40px;
             text-align: center;
             font-family: PingFang-SC-Medium;
-            font-size: 24px;
+            font-size: 22px;
             font-weight: normal;
             font-stretch: normal;
             letter-spacing: 0px;
             color: #333;
             margin-right: 80px;
+            border-radius: 20px;
+            background-color: #f3f3f3;
             cursor: pointer;
             &:nth-child(3){
                 margin-right: 0;
@@ -36,30 +38,70 @@
         }
         .tab-cur{
             color: #fffefe;
-            background-color: #0ddc7c;
-            border-radius: 20px;
+            background-color: #0294FD;
         }
     }
     .tab-bd{
         margin-top: 40px;
+        #caseSwiper{
+            padding: 10px;
+        }
         .case-list{
-            display: none;
+            // display: none;
             .case{
                 float: left;
-                width: 392px;
-                border-radius: 5px 5px 0px 0px;
-                box-shadow: 0 0 2px 1px
-                rgba(0, 0, 0, .1);
-                >img{
+                width: 380px;
+                // border-radius: 15px;
+                box-shadow: 0 0 10px rgba(0,0,0,.15);
+                border: 1px solid #e6e6e6;
+                overflow: hidden;
+                cursor: pointer;
+                transition: all .6s;
+                .case-pic{
+                    position: relative;
                     width: 100%;
-                    // height: auto;
-                    height: 280px;
+                    overflow: hidden;
+                    >img{
+                        width: 100%;
+                        // height: auto;
+                        height: 280px;
+                    }
+                    .case-bg{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        width: 0;
+                        height: 100%;
+                        background-color: rgba(0, 0, 0, 0.5);
+                        transition: all .6s;
+                        .search-icon{
+                            position: absolute;
+                            top: 0;
+                            left: 50%;
+                            display: block;
+                            width: 200px;
+                            height: 200px;
+                            transform: translate(-50%,-100%);
+                            background-position: center;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            transition: all .6s;
+                        }
+                    }
                 }
                 &:hover{
-                    box-shadow: 0px 0px 10px 1px 
-                    rgba(0, 0, 0, 0.2);
+                    border: 1px solid #3cc7f8;
+                    .case-bg{
+                        width: 100%;
+                        .search-icon{
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%) scale(.5);
+                        }
+                    }
                     .go-look{
-                        display: block!important;
+                        opacity: 1!important;
                     }
                 }
                 .desc{
@@ -81,7 +123,7 @@
                     }
                     .go-look{
                         float: right;
-                        display: none;
+                        opacity: 0;
                         margin-top: 20px;
                         width: 120px;
                         height: 40px;
@@ -90,6 +132,7 @@
                         border-radius: 20px;
                         text-align: center;
                         cursor: pointer;
+                        transition: all 1s;
                         .txt{
                             margin-right: 5px;
                             font-size: 18px;
@@ -106,10 +149,10 @@
                 }
             }
             .m-r{
-                margin-right: 7px;
+                margin-right: 15px;
             }
             .m-t{
-                margin-top: 10px;
+                margin-top: 15px;
             }
         }
         .case-list-cur{

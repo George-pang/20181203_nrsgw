@@ -7,6 +7,4 @@ $(function(){
     map.enableScrollWheelZoom(true); //开启鼠标滚轮缩放
     var marker = new BMap.Marker(point); // 创建标注    
     map.addOverlay(marker); // 将标注添加到地图中 ，默认标注样式
-
-
 });

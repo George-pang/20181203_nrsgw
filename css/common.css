@@ -22,6 +22,7 @@ body {
   font-size: 14px;
   padding-top: 70px;
   min-width: 1366px;
+  width: 100%;
 }
 input,
 textarea {
@@ -44,8 +45,8 @@ textarea {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
   min-width: 1366px;
+  width: 100%;
   height: 70px;
   line-height: 70px;
   background-color: #fafbfd;

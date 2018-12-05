@@ -11,7 +11,7 @@
   float: left;
   width: 440px;
   height: 800px;
-  background-color: #0fec85;
+  background-color: rgba(2, 148, 253, 0.57);
 }
 .about-main .about-us-swiper .swiper-wrapper .swiper-slide {
   padding: 10px;
@@ -67,7 +67,7 @@
   border-radius: 0px 15px 15px 0px;
 }
 .about-main .about_us .tab-hd .tab-current {
-  background-color: #0ddc7c;
+  background-color: rgba(2, 148, 253, 0.57);
 }
 .about-main .about_us .title-row .title {
   font-family: 'Raleway', sans-serif;

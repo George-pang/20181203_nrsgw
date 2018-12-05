@@ -85,7 +85,7 @@
 }
 .index_main .column_wrapper .column_service .service_swiper .service_swiper_pagination .swiper-pagination-bullet-active {
   background-color: #fff;
-  border: solid 1px #0ddc7c;
+  border: solid 1px #0294FD;
 }
 .index_main .column_wrapper .column_service .service_swiper .swiper-button-next,
 .index_main .column_wrapper .column_service .service_swiper .swiper-button-prev {
@@ -102,6 +102,8 @@
 }
 .index_main .column_wrapper .column_platform .platform-list .platform .platform-icon {
   text-align: center;
+  width: 90px;
+  height: auto;
   opacity: .6;
   transition: all .6s;
 }
@@ -141,7 +143,8 @@
   height: 250px;
   text-align: center;
   border-radius: 5px;
-  border: solid 1px #0fec85;
+  border: 1px solid #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
   overflow: hidden;
 }
 .index_main .column_wrapper .column_advantage .advantage-list .advantage:hover .advantage-details {
@@ -154,6 +157,10 @@
   width: 100%;
   transform: translateY(-50%);
   text-align: center;
+}
+.index_main .column_wrapper .column_advantage .advantage-list .advantage .advantage-desc > img {
+  width: 80px;
+  height: auto;
 }
 .index_main .column_wrapper .column_advantage .advantage-list .advantage .advantage-desc .advantage-name {
   margin-top: 20px;
@@ -205,28 +212,30 @@
 .index_main .column_wrapper .column_case .case-list .case {
   position: relative;
   float: left;
-  width: 392px;
-  height: 270px;
-  overflow: hidden;
+  width: 380px;
   background-color: #4f4f4f;
+  border-radius: 15px;
+  overflow: hidden;
 }
-.index_main .column_wrapper .column_case .case-list .case:hover img {
+.index_main .column_wrapper .column_case .case-list .case:hover > img {
   opacity: .4;
 }
 .index_main .column_wrapper .column_case .case-list .case:hover .case-name {
   opacity: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .index_main .column_wrapper .column_case .case-list .case > img {
   width: 100%;
-  height: auto;
+  height: 270px;
   opacity: .8;
   transition: all .6s;
 }
 .index_main .column_wrapper .column_case .case-list .case .case-name {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 100%;
+  left: 0;
   width: 100%;
   opacity: 0;
   transition: all .6s;
@@ -260,10 +269,10 @@
   cursor: pointer;
 }
 .index_main .column_wrapper .column_case .case-list .m_r {
-  margin-right: 7px;
+  margin-right: 25px;
 }
 .index_main .column_wrapper .column_case .case-list .m_t {
-  margin-top: 7px;
+  margin-top: 25px;
 }
 .index_main .shallow-bg {
   background-color: #f9f9f9;
@@ -283,7 +292,7 @@
 }
 .index_main .banner_2 .banner_2_txt li {
   float: left;
-  margin-right: 120px;
+  width: 33.33%;
   font-family: PingFang-SC-Medium;
   font-size: 28px;
   font-weight: normal;
